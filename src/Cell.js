@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Cell.css";
 
 /** A single cell on the board.
@@ -14,9 +14,22 @@ import "./Cell.css";
  *
  **/
 
-function Cell({ flipCellsAroundMe, isLit }) {
-  const classes = `Cell ${isLit ? "Cell-lit" : ""}`;
-  return <td className={classes} onClick={flipCellsAroundMe} />;
+class Cell extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(evt) {
+    // call up to the board to flip cells around this cell
+    this.props.flipCellsAroundMe(this.props);
+  }
+
+  render() {
+    let classes = "Cell" + (this.props.isLit ? " Cell-lit" : "");
+
+    return <td className={classes} onClick={this.handleClick} />;
+  }
 }
 
 export default Cell;

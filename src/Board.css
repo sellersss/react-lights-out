@@ -1,3 +1,90 @@
+@media (max-width: 375px) {
+  .container {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+  }
+
+  .Board {
+    margin: 1.5em 0;
+    box-shadow: 0 0 2em 0.1em #8039fb4f;
+  }
+
+  .Board-btn {
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: .7rem .5rem;
+    box-shadow: 0 .1em .2em .1em #8039fb;
+    border-radius: .2em;
+  }
+
+  table {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 750px) and (min-width: 375px) {
+  .container {
+    font-size: 2.5rem;
+    letter-spacing: .75rem;
+  }
+
+  .Board {
+    box-shadow: 0 0 2em 0.1em #8039fb4f;
+  }
+
+  .Board-btn {
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: .7rem .5rem;
+    box-shadow: 0 .1em .2em .1em #8039fb;
+    border-radius: .2em;
+  }
+
+  table {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    font-size: 2.5rem;
+    letter-spacing: 1.6px;
+  }
+
+  .Board {
+    box-shadow: 0 0 2em 0.1em #8039fb4f;
+  }
+
+  .Board-btn {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 1rem .7rem;
+    box-shadow: 0 .2em .3em .1em #8039fb;
+    border-radius: .2em;
+  }
+
+  table {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  text-align: center;
+  font-weight: 200;
+  color: #7F39FB;
+}
+
 .Board {
-  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.Board-btn {
+  background-color: #7F39FB;
+  font-weight: 200;
+  font-family: inherit;
+  border: none;
+  text-align: center;
 }
